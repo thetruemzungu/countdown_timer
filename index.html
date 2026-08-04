@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countdown to Brexit 2019</title>
-    <meta name="author" content="Santiago Méndez" />
+    <title>THE Countdown</title>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -30,14 +29,8 @@
 		</div>-->
       <div class="container">
         <div class="countdown">
-          <h1>Move Out Countdown</h1>
+          <h2>THE Countdown</h2>
           <div id="clock">
-            <h2>
-              Brexit
-              <a href="https://en.wikipedia.org/wiki/Brexit" target="_blank"
-                >happened</a
-              >. <br />God save the <span>Queen</span> King.
-            </h2>
           </div>
         </div>
       </div>
@@ -53,10 +46,10 @@
 
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				$(this).html(event.strftime('' +
-					'<div class="time">%D  <span class="labels">days</span></div>' +
-					'<div class="time">%H  <span class="labels">hours</span></div>' +
-					'<div class="time">%M  <span class="labels">minutes</span></div>' +
-					'<div class="time">%S <span class="labels">seconds</span></div>'));
+					'<div class="time">%D<span class="labels">days</span></div>' +
+					'<div class="time">%H<span class="labels">hours</span></div>' +
+					'<div class="time">%M<span class="labels">minutes</span></div>' +
+					'<div class="time">%S<span class="labels">seconds</span></div>'));
 			});
 
 			$('#newsTicker').webTicker({
